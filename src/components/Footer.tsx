@@ -18,11 +18,14 @@ export function Footer() {
               <a href="#philosophy" className="text-sm text-foreground hover:text-sage transition-colors">
                 О платформе
               </a>
-              <a href="#services" className="text-sm text-foreground hover:text-sage transition-colors">
-                Направления
+              <a href="#education" className="text-sm text-foreground hover:text-sage transition-colors">
+                Образование
               </a>
-              <a href="#process" className="text-sm text-foreground hover:text-sage transition-colors">
-                Как работает
+              <a href="#library" className="text-sm text-foreground hover:text-sage transition-colors">
+                Библиотека
+              </a>
+              <a href="#projects" className="text-sm text-foreground hover:text-sage transition-colors">
+                Проекты
               </a>
               <a href="#contact" className="text-sm text-foreground hover:text-sage transition-colors">
                 Участвовать
