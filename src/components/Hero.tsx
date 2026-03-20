@@ -9,18 +9,33 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 lg:px-12 pt-20">
+      {/* Цветовая полоса Юнармии вверху */}
+      <div className="absolute top-0 left-0 right-0 h-1 flex">
+        <div className="flex-1 bg-[#CC0000]" />
+        <div className="flex-1 bg-[#1B5E20]" />
+        <div className="flex-1 bg-white border-y border-border" />
+        <div className="flex-1 bg-[#1A3A6B]" />
+      </div>
+
       {/* Subtle background texture */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-sand/30 to-background" />
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
-        {/* Overline */}
-        <p
-          className={`text-xs tracking-[0.3em] uppercase text-muted-foreground mb-8 transition-all duration-1000 delay-300 ${
+        {/* Юнармия badge */}
+        <div
+          className={`inline-flex items-center gap-3 mb-8 transition-all duration-1000 delay-200 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Социальная платформа
-        </p>
+          <div className="flex gap-1">
+            <span className="w-2 h-6 bg-[#CC0000] rounded-sm" />
+            <span className="w-2 h-6 bg-[#1B5E20] rounded-sm" />
+            <span className="w-2 h-6 bg-[#1A3A6B] rounded-sm" />
+          </div>
+          <span className="text-xs tracking-[0.3em] uppercase text-muted-foreground">
+            Платформа «Бумеранг» · Юнармия
+          </span>
+        </div>
 
         {/* Main Headline */}
         <h1
@@ -38,7 +53,7 @@ export function Hero() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          Комплексная платформа для ветеранских и молодёжных организаций. Повышаем престиж военной службы, укрепляем историческую память и гражданскую активность — для долгосрочного укрепления страны.
+          Комплексная платформа для ветеранских и молодёжных организаций, Юнармии и государственных структур. Повышаем престиж военной службы и укрепляем гражданскую активность молодёжи.
         </p>
 
         {/* CTA */}

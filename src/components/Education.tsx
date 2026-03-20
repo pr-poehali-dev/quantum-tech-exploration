@@ -11,6 +11,7 @@ const courses = [
     description:
       "Ключевые события отечественной истории, великие сражения и выдающиеся полководцы — в формате, сочетающем текст с визуальными элементами.",
     tags: ["Уроки", "Тесты", "Рейтинги"],
+    accent: "",
   },
   {
     id: "army",
@@ -21,6 +22,7 @@ const courses = [
     description:
       "Военная техника, условия службы и возможности для тех, кто выбирает военную карьеру. Узнайте, как устроена армия сегодня.",
     tags: ["Рода войск", "Техника", "Карьера"],
+    accent: "",
   },
   {
     id: "heroes",
@@ -31,6 +33,18 @@ const courses = [
     description:
       "Биографии героев прошлого и настоящего. Онлайн-встречи с ветеранами — школьники могут задать вопросы живым свидетелям истории.",
     tags: ["Биографии", "Встречи", "Подвиги"],
+    accent: "",
+  },
+  {
+    id: "yunarmia",
+    icon: "Flame",
+    label: "Юнармия",
+    color: "text-[#CC0000]",
+    title: "Юнармия — движение сильных",
+    description:
+      "Специальный раздел для участников Юнармии: программы подготовки, история движения, конкурсы и возможности для юнармейцев на платформе «Бумеранг».",
+    tags: ["Юнармейцы", "Конкурсы", "Подготовка"],
+    accent: "yunarmia",
   },
 ]
 
@@ -85,7 +99,7 @@ export function Education() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Три раздела для школьников и студентов — интерактивный формат, геймификация
+              Четыре раздела для школьников, студентов и юнармейцев — интерактивный формат, геймификация
               и живое общение с ветеранами.
             </p>
           </div>
@@ -102,10 +116,17 @@ export function Education() {
               key={c.id}
               onClick={() => setActiveTab(c.id)}
               className={`flex items-center gap-2 px-6 py-3 text-sm tracking-widest uppercase transition-all duration-300 ${
-                activeTab === c.id
+                c.accent === "yunarmia"
+                  ? activeTab === c.id
+                    ? "text-white border-0"
+                    : "bg-background text-[#CC0000] hover:text-[#CC0000]/80 border border-[#CC0000]/40"
+                  : activeTab === c.id
                   ? "bg-sage text-primary-foreground"
                   : "bg-background text-muted-foreground hover:text-foreground border border-border"
               }`}
+              style={c.accent === "yunarmia" && activeTab === c.id
+                ? { background: "linear-gradient(90deg, #CC0000 0%, #1B5E20 50%, #1A3A6B 100%)" }
+                : {}}
             >
               <Icon name={c.icon as "BookOpen"} size={16} />
               {c.label}
@@ -119,15 +140,26 @@ export function Education() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <div className="bg-background p-10 lg:p-14 border border-border">
-            <div className={`mb-6 ${active.color}`}>
+          <div className={`p-10 lg:p-14 border relative overflow-hidden ${
+            active.accent === "yunarmia"
+              ? "border-0 text-white"
+              : "bg-background border-border"
+          }`}
+            style={active.accent === "yunarmia"
+              ? { background: "linear-gradient(135deg, #CC0000 0%, #1B5E20 50%, #1A3A6B 100%)" }
+              : {}}
+          >
+            {active.accent === "yunarmia" && (
+              <div className="absolute inset-0 bg-black/20" />
+            )}
+            <div className={`mb-6 relative z-10 ${active.accent === "yunarmia" ? "text-white" : active.color}`}>
               <Icon name={active.icon as "BookOpen"} size={40} />
             </div>
-            <h3 className="font-serif text-3xl md:text-4xl text-foreground mb-4">{active.title}</h3>
-            <p className="text-muted-foreground leading-relaxed mb-8">{active.description}</p>
-            <div className="flex flex-wrap gap-2">
+            <h3 className={`font-serif text-3xl md:text-4xl mb-4 relative z-10 ${active.accent === "yunarmia" ? "text-white" : "text-foreground"}`}>{active.title}</h3>
+            <p className={`leading-relaxed mb-8 relative z-10 ${active.accent === "yunarmia" ? "text-white/80" : "text-muted-foreground"}`}>{active.description}</p>
+            <div className="flex flex-wrap gap-2 relative z-10">
               {active.tags.map((tag) => (
-                <span key={tag} className="px-4 py-1.5 text-xs tracking-widest uppercase border border-border text-muted-foreground">
+                <span key={tag} className={`px-4 py-1.5 text-xs tracking-widest uppercase border ${active.accent === "yunarmia" ? "border-white/40 text-white" : "border-border text-muted-foreground"}`}>
                   {tag}
                 </span>
               ))}

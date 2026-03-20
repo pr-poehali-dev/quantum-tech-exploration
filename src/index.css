@@ -6,43 +6,43 @@
 
 @layer base {
   :root {
-    /* Бумеранг — строгая государственная палитра */
-    --background: 210 15% 97%;
-    --foreground: 220 20% 12%;
+    /* Бумеранг — цвета Юнармии: красный, зелёный, белый, синий */
+    --background: 0 0% 98%;
+    --foreground: 220 25% 10%;
 
-    --card: 210 10% 99%;
-    --card-foreground: 220 20% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 10%;
 
-    --popover: 210 10% 99%;
-    --popover-foreground: 220 20% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 10%;
 
-    --primary: 215 55% 28%;
-    --primary-foreground: 210 15% 97%;
+    --primary: 150 55% 28%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 12% 92%;
-    --secondary-foreground: 220 20% 12%;
+    --secondary: 210 20% 94%;
+    --secondary-foreground: 220 25% 10%;
 
-    --muted: 210 10% 90%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 210 15% 92%;
+    --muted-foreground: 220 12% 42%;
 
-    --accent: 0 60% 42%;
-    --accent-foreground: 210 15% 97%;
+    --accent: 0 72% 42%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 210 15% 86%;
-    --input: 210 15% 86%;
-    --ring: 215 55% 28%;
+    --border: 210 18% 88%;
+    --input: 210 18% 88%;
+    --ring: 150 55% 28%;
 
     --radius: 0.25rem;
 
-    /* Custom Бумеранг tokens */
-    --sand: 210 12% 92%;
-    --sage: 215 55% 28%;
-    --terracotta: 0 60% 42%;
-    --indigo: 230 40% 35%;
-    --stone: 210 8% 68%;
+    /* Custom Юнармия tokens */
+    --sand: 210 15% 94%;
+    --sage: 150 55% 28%;
+    --terracotta: 0 72% 42%;
+    --indigo: 215 60% 32%;
+    --stone: 210 10% 65%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
