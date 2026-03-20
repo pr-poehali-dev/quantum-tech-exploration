@@ -22,79 +22,62 @@ export function Philosophy() {
   }, [])
 
   return (
-    <section ref={sectionRef} id="philosophy" className="py-32 lg:py-40 px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          {/* Image */}
-          <div
-            className={`relative aspect-[4/5] bg-sand overflow-hidden transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
-            }`}
-          >
-            <img
-              src="https://cdn.poehali.dev/projects/9e91488a-c15a-4424-a376-d7440e2033f3/files/57e3cefa-a3bb-47ef-b4c8-bc23904e6d37.jpg"
-              alt="Патриотическое воспитание молодёжи"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            {/* Overlay accent */}
-            <div className="absolute bottom-0 left-0 w-24 h-24 bg-[#CC0000]/80" />
-          </div>
-
-          {/* Content */}
-          <div className="lg:pl-8">
-            <p
-              className={`text-xs tracking-[0.3em] uppercase text-terracotta mb-6 transition-all duration-1000 delay-200 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
-            >
-              О платформе
-            </p>
-
-            <h2
-              className={`font-serif text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-foreground mb-8 text-balance transition-all duration-1000 delay-300 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
-            >
-              Миссия
-              <span className="italic"> объединять</span>
-              <br />
-              поколения
+    <section ref={sectionRef} id="philosophy">
+      <div
+        className={`grid md:grid-cols-2 transition-all duration-1000 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
+      >
+        {/* Левый блок — Патриотическое воспитание */}
+        <div className="relative h-[420px] md:h-[520px] overflow-hidden group">
+          <img
+            src="https://cdn.poehali.dev/projects/9e91488a-c15a-4424-a376-d7440e2033f3/bucket/0020ba1d-0adb-4863-994c-4af90bf03069.png"
+            alt="Юнармия на параде"
+            className="absolute inset-0 w-full h-full object-cover object-left scale-105 group-hover:scale-100 transition-transform duration-700"
+            style={{ objectPosition: "0% 50%" }}
+          />
+          <div className="absolute inset-0 bg-black/45" />
+          <div className="relative z-10 h-full flex flex-col justify-center px-10 lg:px-16">
+            <p className="text-white/70 italic text-sm mb-4 tracking-wide">Интерактивная платформа для обучения</p>
+            <h2 className="font-sans font-black text-3xl md:text-4xl lg:text-5xl uppercase leading-tight mb-8"
+              style={{ color: "#FF6B8A", textShadow: "0 2px 12px rgba(0,0,0,0.5)" }}>
+              Патриотическое<br />воспитание молодёжи
             </h2>
-
-            <div
-              className={`space-y-6 text-muted-foreground leading-relaxed transition-all duration-1000 delay-500 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
-            >
-              <p>
-                «Бумеранг» — это платформа, где опыт ветеранов становится силой для молодого поколения, а молодёжь
-                возвращает это уважением, вниманием и гражданской активностью.
-              </p>
-              <p>
-                Мы создаём измеримые социальные результаты: улучшение психологического состояния ветеранов,
-                рост <em className="text-foreground">исторической грамотности</em> и
-                <em className="text-foreground"> гражданской ответственности</em> среди молодёжи.
-              </p>
+            <div className="flex items-center gap-4">
+              <div className="w-1 h-12 bg-[#4FC3F7]" />
+              <a
+                href="#education"
+                className="px-7 py-3 border border-white text-white text-sm tracking-widest uppercase hover:bg-white hover:text-foreground transition-all duration-300"
+              >
+                Перейти на платформу
+              </a>
             </div>
+          </div>
+        </div>
 
-            {/* Stats */}
-            <div
-              className={`grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-border transition-all duration-1000 delay-700 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
-            >
-              <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">3+</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Направления</p>
-              </div>
-              <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">100+</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Организаций</p>
-              </div>
-              <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">∞</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Связей</p>
-              </div>
+        {/* Правый блок — Поддержка военнослужащих */}
+        <div className="relative h-[420px] md:h-[520px] overflow-hidden group">
+          <img
+            src="https://cdn.poehali.dev/projects/9e91488a-c15a-4424-a376-d7440e2033f3/bucket/0020ba1d-0adb-4863-994c-4af90bf03069.png"
+            alt="Военнослужащий"
+            className="absolute inset-0 w-full h-full object-cover object-right scale-105 group-hover:scale-100 transition-transform duration-700"
+            style={{ objectPosition: "100% 50%" }}
+          />
+          <div className="absolute inset-0 bg-black/50" />
+          <div className="relative z-10 h-full flex flex-col justify-center px-10 lg:px-16">
+            <p className="text-white/70 italic text-sm mb-4 tracking-wide">Мобильное приложение</p>
+            <h2 className="font-sans font-black text-3xl md:text-4xl lg:text-5xl uppercase leading-tight mb-8"
+              style={{ color: "#FFF9C4", textShadow: "0 2px 12px rgba(0,0,0,0.5)" }}>
+              Поддержка<br />военнослужащих
+            </h2>
+            <div className="flex items-center gap-4">
+              <div className="w-1 h-12 bg-[#4FC3F7]" />
+              <a
+                href="#library"
+                className="px-7 py-3 border border-white text-white text-sm tracking-widest uppercase hover:bg-white hover:text-foreground transition-all duration-300"
+              >
+                Узнать больше
+              </a>
             </div>
           </div>
         </div>
