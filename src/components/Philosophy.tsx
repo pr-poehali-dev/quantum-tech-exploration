@@ -32,12 +32,12 @@ export function Philosophy() {
             }`}
           >
             <img
-              src="/minimalist-japanese-interior-design-with-natural-w.jpg"
-              alt="Минималистичный интерьер с натуральным деревом"
+              src="https://cdn.poehali.dev/projects/9e91488a-c15a-4424-a376-d7440e2033f3/bucket/12363e35-8b6c-4f43-b926-1dce72e1431c.png"
+              alt="Юнармия — патриотическое воспитание молодёжи"
               className="absolute inset-0 w-full h-full object-cover"
             />
             {/* Overlay accent */}
-            <div className="absolute bottom-0 left-0 w-24 h-24 bg-terracotta/80" />
+            <div className="absolute bottom-0 left-0 w-24 h-24 bg-[#CC0000]/80" />
           </div>
 
           {/* Content */}
