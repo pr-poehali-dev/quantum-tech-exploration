@@ -32,8 +32,8 @@ export function Philosophy() {
             }`}
           >
             <img
-              src="https://cdn.poehali.dev/projects/9e91488a-c15a-4424-a376-d7440e2033f3/bucket/12363e35-8b6c-4f43-b926-1dce72e1431c.png"
-              alt="Юнармия — патриотическое воспитание молодёжи"
+              src="https://cdn.poehali.dev/projects/9e91488a-c15a-4424-a376-d7440e2033f3/files/57e3cefa-a3bb-47ef-b4c8-bc23904e6d37.jpg"
+              alt="Патриотическое воспитание молодёжи"
               className="absolute inset-0 w-full h-full object-cover"
             />
             {/* Overlay accent */}
