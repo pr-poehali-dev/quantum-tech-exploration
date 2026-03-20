@@ -39,8 +39,8 @@ export function Testimonial() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          Работа с Wabi была похожа на медитацию. Они поняли, что наш дом должен поддерживать
-          благополучие семьи, а не просто красиво выглядеть. Результат — пространство, которое наконец ощущается как наше.
+          «Бумеранг» дал нашим ветеранам не просто площадку — он вернул им ощущение нужности. Молодёжь слушает,
+          задаёт вопросы, приходит на встречи. Это именно та связь поколений, о которой мы мечтали.
         </blockquote>
 
         {/* Attribution */}
@@ -49,8 +49,8 @@ export function Testimonial() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="text-sm tracking-widest uppercase text-primary-foreground/80">Анна и Михаил Петровы</p>
-          <p className="text-sm text-primary-foreground/60 mt-1">Резиденция в Москве</p>
+          <p className="text-sm tracking-widest uppercase text-primary-foreground/80">Сергей Владимирович Громов</p>
+          <p className="text-sm text-primary-foreground/60 mt-1">Председатель ветеранской организации, Новосибирск</p>
         </div>
       </div>
     </section>

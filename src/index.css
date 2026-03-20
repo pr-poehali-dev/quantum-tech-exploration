@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap&subset=cyrillic,cyrillic-ext,latin,latin-ext');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap&subset=cyrillic,cyrillic-ext,latin,latin-ext");
 
 @tailwind base;
 @tailwind components;
@@ -6,43 +6,43 @@
 
 @layer base {
   :root {
-    /* Japandi color palette - warm naturals with muted accents */
-    --background: 40 20% 96%;
-    --foreground: 30 15% 15%;
+    /* Бумеранг — строгая государственная палитра */
+    --background: 210 15% 97%;
+    --foreground: 220 20% 12%;
 
-    --card: 40 15% 98%;
-    --card-foreground: 30 15% 15%;
+    --card: 210 10% 99%;
+    --card-foreground: 220 20% 12%;
 
-    --popover: 40 15% 98%;
-    --popover-foreground: 30 15% 15%;
+    --popover: 210 10% 99%;
+    --popover-foreground: 220 20% 12%;
 
-    --primary: 150 30% 25%;
-    --primary-foreground: 40 15% 98%;
+    --primary: 215 55% 28%;
+    --primary-foreground: 210 15% 97%;
 
-    --secondary: 40 15% 92%;
-    --secondary-foreground: 30 15% 15%;
+    --secondary: 210 12% 92%;
+    --secondary-foreground: 220 20% 12%;
 
-    --muted: 40 12% 90%;
-    --muted-foreground: 30 8% 45%;
+    --muted: 210 10% 90%;
+    --muted-foreground: 220 10% 45%;
 
-    --accent: 25 50% 55%;
-    --accent-foreground: 40 15% 98%;
+    --accent: 0 60% 42%;
+    --accent-foreground: 210 15% 97%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 40 15% 88%;
-    --input: 40 15% 88%;
-    --ring: 150 30% 25%;
+    --border: 210 15% 86%;
+    --input: 210 15% 86%;
+    --ring: 215 55% 28%;
 
     --radius: 0.25rem;
 
-    /* Custom Japandi tokens */
-    --sand: 40 20% 92%;
-    --sage: 150 30% 25%;
-    --terracotta: 25 50% 55%;
-    --indigo: 260 30% 35%;
-    --stone: 40 8% 70%;
+    /* Custom Бумеранг tokens */
+    --sand: 210 12% 92%;
+    --sage: 215 55% 28%;
+    --terracotta: 0 60% 42%;
+    --indigo: 230 40% 35%;
+    --stone: 210 8% 68%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
